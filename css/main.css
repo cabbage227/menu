@@ -1,0 +1,641 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	list-style: none;
+	outline: none;
+	text-decoration: none;
+}
+body{
+	font-family: '微软雅黑';
+	color: #333;
+	font-size: 16px;
+	/*background: url(../images/1.jpg)no-repeat;*/
+
+}
+	.blur {    
+    -webkit-filter: blur(2px); /* Chrome, Opera */
+       -moz-filter: blur(2px);
+        -ms-filter: blur(2px);    
+            filter: blur(2px);    
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: -9999;
+}
+.clear{
+	clear: both;
+}
+.hotel{
+	height: 100px;
+}
+.logo{
+	margin-left: 5%;
+	height: 70px;
+	float: left;
+	padding-top: 30px;
+	color: #f6ac49;
+	font-size: 22px;
+	font-family:PingFang SC,Lantinghei SC,Helvetica Neue,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans;
+
+}
+.logo img{
+	width: 50px;
+	height: auto;
+	margin-right: 10px;
+}
+/*文字滚动*/
+.qimo8{ 
+	overflow:hidden; 
+	width:650px;
+	padding-top: 40px;
+	float:right;
+	margin-right: 5%;
+}
+ .qimo {
+ 	width:8000%; 
+ 	height:30px;
+ }
+ .qimo div{ 
+ 	float:left;
+ }
+ .qimo ul{
+ 	float:left; 
+ 	height:30px; 
+ 	overflow:hidden; 
+ 	zoom:1; 
+ }
+ .qimo ul li{
+ 	float:left; 
+ 	line-height:30px; 
+ 	list-style:none;
+ 	margin-right:10px;
+	color:#fff;
+ }
+
+
+.cont{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+}
+/*导航*/
+.banner{
+	width: 22%;
+	position: fixed;
+}
+.banner div{
+	margin: 0 auto;
+	width: 90%;
+}
+.banner ul li{
+	color: #fff;
+	width: 100%;
+	cursor: pointer;
+	line-height: 30px;
+}
+.preview{
+	color: #999 !important;
+	font-size: 12px;
+	position: absolute;
+	top: 150px;
+	left: 0;
+}
+.nowP{
+	margin-left: 80px !important;
+}
+.banner ul li img{
+	height:26px;
+	width: auto;
+}
+/*菜品分类*/
+.banner h1{
+	line-height: 60px;
+	font-size: 20px;
+	font-weight: bold;
+	padding-left: 30px;
+}
+.hoverr{
+	display: none;
+}
+
+.banner ul li a{
+	font-size: 16px;
+	color: #fff;
+	line-height: 30px;
+	padding-left: 30px;
+	display: block;
+}
+.banner ul li a:hover {
+	color: #f6ac49;
+}
+.meunSelect ul{
+	display: none;
+}
+
+
+
+.main{
+	width: 90%;
+	margin: 0 auto;
+	
+}
+.right{
+	width: 70%;
+	margin-left: 27%;
+	
+}
+.header{
+	height: 100px;
+}
+.time{
+	color: #f6ac49;
+	float: right;
+	line-height: 40px;
+	margin-top: 60px;
+}
+.load{
+	float: right;
+	margin-top: 63px;
+	margin-right: 10px;
+}
+.load img{
+	height: 25px;
+	width: auto;
+}
+.mainCont{
+	width: 97%;
+	padding-left:3%;
+	background-color: rgba(97,85,71,0.8);
+	
+}
+.mainleft{
+	height: 300px;
+	width: 250px;
+	left: 5%;
+	
+	position: fixed;
+}
+
+
+
+/*菜品内容*/
+.food{
+	width: 100%;
+	padding-top: 40px;
+	margin-bottom: 30px;
+}
+.dishHot{
+	position: absolute;
+	top: 0;
+	color:#fff !important;
+	line-height: 25px;
+	font-size: 14px;
+	left: 0;
+	z-index: 3;
+	font-weight: normal;
+}
+.dishHotSpan{
+	position: absolute;
+    height: 25px !important;
+    width: 60px !important;
+    left: -7px;
+    top: 0px;
+    opacity: 0.8;
+}
+#hotdish ul li,#discount ul li{
+	position: relative;
+}
+.foodname{
+	font-size: 22px;
+	line-height: 50px;
+	color: #f6ac49;
+}
+.food ul li {
+	float: left;
+	background: #fff;
+    width: 155px;
+    margin-right: 20px;
+	height: 215px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+
+}
+.food ul li p{
+	color: #f6ac49;
+	margin-left: 5px;
+	display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 3;
+overflow: hidden;
+font-size: 14px;
+}
+.food ul li img{
+	width: 155px;
+	display: block;
+	height: 110px;
+	cursor: pointer;
+	margin-bottom: 13px;
+}
+.food ul li div h1{
+	font-size: 16px;
+	margin-left: 5px;
+	color: #333;
+}
+.food ul li div button{
+	width: 95%;
+	margin: 0 auto;
+	display: block;
+	font-size: 14px;
+	line-height: 25px;
+	border:1px solid #f6ac49;
+	background-color: #fff;
+	color: #333;
+	border-radius: 5px;
+	margin-top: 5px;
+	cursor: pointer;
+}
+.food ul li div button:hover{
+	background-color: #f6ac49;
+	color: #fff;
+}
+.food span{
+	display: none;
+}
+.button1,.button2{
+	width: 20px !important;
+	float: left;
+	height: 20px !important;
+	line-height: 20px !important;
+	border-radius: 0px !important;
+}
+.food ul li div input{
+	float: left;
+	width: 30px;
+	height: 18px;
+	margin-top: 5px;
+	border-top:1px solid lightblue;
+	border-bottom: 1px solid lightblue;
+}
+.food ul li div div{
+	height: 25px;
+	margin: 0 auto;
+	width: 70px;
+	text-align: center;
+}
+
+
+/*介绍信息*/
+.bg{
+	width: 100%;
+	height: 100%;
+	display: none;
+	position: fixed;
+	background-color: #000;
+	opacity: 0.5;
+	top: 0;
+}
+.introduction,.payAll{
+	display: none;
+	width: 650px;
+	background-color: #fff;
+	position:fixed;
+	margin-bottom: 300px;
+	top:0;
+	left: 50%;
+	margin:50px 0 0 -325px; 
+	z-index: 4;
+}
+.foodimg{
+	margin: 50px 20px;
+	float: left;
+	height:200px;
+	width: 266px; 
+}
+.detail{
+	float: left;
+	margin-top: 36px;
+}
+.detail h1{
+	font-size: 28px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.detail div{
+	color: #aaa;
+	border-top: 1px dashed #ccc;
+	padding: 5px;
+	width: 285px;
+	line-height: 20px;
+	font-size: 14px;
+	border-bottom: 1px dashed #ccc;
+	
+	-webkit-box-orient: vertical;
+-webkit-line-clamp: 3;
+	margin-bottom: 30px;
+}
+.detail p{
+	color: #f17530;
+	font-size: 22px;
+	margin-top: 10px;
+}
+.close{
+	width: 30px;
+	float: right;
+}
+.close img{
+	height: 20px;
+	width: auto;
+	margin: 10px 10px 0 0;
+	cursor: pointer;
+}
+
+/*去支付*/
+.payCont{
+	width: 590px;
+	margin: 0 auto;
+	padding:10px 0 30px 0;
+}
+.payCont h1{
+	text-align: center;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+.payHead{
+	width: 100%;
+	height: 40px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background: rgba(0,0,0,0.8);
+}
+.payheadOne span{
+	color: #fff;
+}
+.payheadTwo span{
+	color: #f6ac49;
+}
+.payheadOne{
+	float: left;
+	margin-left: 10px;
+	line-height: 30px;
+}
+.tableId{
+	float: left;
+	color:#fff;
+	margin-left: 10px;
+	line-height: 40px;
+}
+.payheadTwo{
+	float: right;
+	margin-right: 10px;
+	line-height: 40px;
+}
+.payList table{
+	border-collapse: collapse;
+	border:1px solid #ddd;
+	width: 100%;
+}
+.payList table th,.payList table td{
+	padding: 0 15px;
+	text-align: left;
+	color: #999;
+	border:1px solid #ddd;
+}
+.payFoot{
+	width: 100%;
+	height: 30px;
+	background: rgba(0,0,0,0.8);
+}
+.payFoot button{
+	height: 30px;
+	width: 100px;
+	background: #f6ac49;
+	color: #fff;
+	float: right;
+	cursor: pointer;
+}
+
+
+/*购物车*/
+.u-flyer {
+	display: block;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	position: fixed;
+	z-index: 9999;
+}
+
+.shoping{
+	background-color: #f1caca;
+	width: 130px;
+    padding-left: 10px;
+}
+.cart i{
+	margin-top: 8px;
+	background:url(../images/car1.svg) no-repeat;
+	width: 20px;
+	background-size: 20px 20px;
+	height: 20px;
+	display: block;
+	float: left;
+	margin-right: 8px;
+}
+#shopcar{
+	display: block;
+	font-size: 14px;
+	color: #333;
+	float: left;
+	line-height: 40px;
+}
+.cart div{
+	float: left;
+}
+.pay{
+	width: 110px;
+	height: 40px;
+	background:#000;
+	color: #fff;
+	text-align: center;
+	line-height: 40px;
+	font-size: 16px;
+	cursor: pointer;
+}
+.total{
+	float: left;
+	color: #fff;
+	font-size: 24px;
+}
+#note{
+	font-size: 14px;
+}
+
+/*加入购物车的货物*/
+.m-sidebar{
+	 position: fixed;
+    bottom: 0;
+    left: 5%;
+    width: 250px;
+    background: #fff;
+    opacity: 0.8;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+
+.m-sidebar ul li{
+	height: 30px;
+}
+.m-sidebar ul li span{
+	display: none;
+}
+.joinName,.shopPrice{
+	font-size: 14px;
+	color: #333;
+	float: left;
+	line-height: 30px;
+}
+.joinName{
+	width: 130px;
+}
+.counter{
+	width: 75px;
+	float: left;
+	height: 20px;
+	padding-top: 2px;
+	margin-right: 5px;
+}
+.counter input{
+	width: 30px;
+	border-top:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+	height: 18px;
+}
+.counter button{
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	border:1px solid #ddd;
+	background-color: #fff;
+}
+.leftH1{
+	margin-bottom: 40px;
+}
+.seatCont > h1{
+	text-align: center;
+	padding-top: 30px;
+	color: #f6ac49;
+	font-weight: normal;
+}
+/*seat.php*/
+.seatBanner{
+	width: 17% !important;
+}
+.seatCont{
+	width: 100%;
+	background: rgba(97,85,71,0.8);
+}
+/*选座*/
+.meunSelect a,.chooseS a,.payMoney a{
+	padding-left: 0px !important;
+}
+
+.chooseSeat,.paySearch{
+	margin: 30px 10px 30px 0;
+	float: right;
+}
+.paySearch{
+	margin-right: 5% !important;
+}
+.chooseSeat input,.paySearch input{
+	border:1px solid #f6ac49;
+	background: transparent;
+	color: #fff;
+	line-height: 25px;
+	height: 25px;
+	padding-left:8px; 
+	border-radius: 10px;
+}
+.chooseSeat button,.paySearch button{
+	height: 25px;
+	width: 60px;
+	border:1px solid #f6ac49;
+	background: transparent;
+	color: #fff;
+	cursor: pointer;
+}
+
+
+.Hall{
+	float: left;
+	width: 70%;
+	background: rgba(255,242,0,0.8);
+	padding: 20px 0 0 0;
+}
+.Hall p,.Room p{
+	float: left;
+	cursor: pointer;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	margin:0 21px;
+	margin-bottom: 10px;
+	font-size: 12px;
+}
+.Hall p{
+	width: 50px;
+}
+.Room p{
+	width: 65px;
+}
+.hall-room p span{
+	display: none;
+}
+.Room{
+	padding: 20px 0 0 0;
+	float: left;
+	width: 30%;
+	background: rgba(255,127,39,0.8);
+}
+.seatRight{
+	margin-left: 20%;
+}
+
+/*pay.php*/
+.ordertable{
+    background: #fff;
+    padding: 2em;
+    border-collapse: collapse;
+    margin-top: 70px;
+    width: 90%;
+    margin: 0 auto;
+}
+.payLists table{
+	margin-top: 0px !important;
+}
+.ordertable th, .ordertable td {
+    font-size: 0.85em;
+}
+.ordertable th, .ordertable td {
+    padding: 10px;
+    color: #999;
+}
+th {
+    text-align: left;
+}
+.active{
+	background-color: #dff0d8;
+}
+
+.payConent{
+	margin-top: 50px;
+	width: 560px;
+	margin: 0 auto;
+	padding:40px 0;
+}
+#payIdAll,#allprices{
+	display: none;
+}
+
+
+

@@ -1,0 +1,633 @@
+*{
+	margin: 0;
+	padding: 0;
+	border:0;
+	list-style: none;
+	outline: none;
+	text-decoration: none;
+}
+th{
+	text-align: left;
+}
+body{
+	font-size: 14px;
+	font-family: '微软雅黑';
+	background: #000;
+}
+.all{
+	width: 100%;
+	height: 100%
+}
+.clear{
+	clear: both;
+}
+.banner{
+	background-color: rgb(6, 217, 149);
+	height: 50px;
+	width: 100%;
+
+	border-bottom: 1px solid #e7e7e7;
+}
+.banner h1{
+	font-size: 24px;
+	float: left;
+	color: #fff;
+	font-weight: 500;
+	padding-left: 10px;
+	line-height: 50px;
+}
+.back{
+	float: right;
+	margin-right: 20px;
+}
+.back a{
+	color: #fff;
+	line-height: 50px;
+}
+.back a:hover{
+	color: #f6ac49;
+}
+.dishManager p:hover{
+	color: #f6ac49;
+}
+/*左边导航*/
+.main{
+	width: 100%;
+	height: 100%;
+}
+.list{
+	position: fixed;
+	width: 22%;
+	float: left;
+	height: 100%;
+}
+.list ul{
+	margin-left: 20px;
+	padding-top: 35px;
+}
+.list ul li{
+	height: 40px;
+	margin-bottom: 5px; 
+}
+.list ul li a{
+	height: 40px;
+	display: block;
+}
+.list ul li a span{
+	color: #999;
+    font-size: 14px;
+    line-height: 40px;
+    display: block;
+    float: left;
+}
+.menuImg,.discountImg{
+	width: auto;
+	height: 29px;
+	float: left;
+	margin-left: 5px;
+	margin-right: 10px;
+}
+.hover{
+	display: none;
+}
+.list ul li a:hover span{
+	color: #f6ac49;
+}
+.discountImg{margin-top: 5px;height: 25px !important;}
+.cookImg{
+	height: 23px;
+	width: auto;
+	margin-right: 12px;
+	margin-left: 6px;
+	float: left;
+}
+.dingImg,.tableImg,.waiterImg{
+	height: 20px;
+	width: auto;
+	margin: 10px 13px 0 7px;
+	float: left;
+}
+
+/*主题*/
+.cont{
+	background-color: #f2f4f8;
+	width: 78%;
+	margin-left: 22%;
+	height: 100%;
+}
+.graphs{
+	margin:0 20px;
+	padding: 40px 0;
+
+}
+.dishManager{
+	height: 83px;
+}
+.dishManager p{
+	float: right;
+	cursor: pointer;
+}
+.soup h3,.dishManager h1{
+	color: #000;
+    font-size: 1.7em;
+    font-weight: 300;
+    margin-bottom: 1em;
+}
+.allCont{
+	background: #fff;
+    padding: 2em
+}
+.soupTable{
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+}
+.allCont table{
+	 border-collapse: collapse;
+	 width: 100%;
+}
+.allCont table tr{
+	line-height: 30px;
+}
+.allCont table th,.allCont table td{
+	padding: 10px;
+	color: #999;
+}
+
+.table tr td p{
+	cursor: pointer;
+}
+.soup{
+	margin-bottom: 50px;
+}
+.soupTable th,.soupTable td{
+	border: 1px solid #ddd;
+}
+.allCont table th,.allCont table td{
+	font-size: 0.85em;
+}
+.allCont table img{
+	height: 80px;
+    width: 120px;
+}
+.changeDish,#addDishInfor{
+	height: 500px !important;
+	width: 365px !important;
+	margin-left: -225px !important;
+	margin-top: -250px !important;
+}
+#adishID{
+	float: none !important;
+}
+#cookarea{display: none;}
+
+
+/*cook.php*/
+.warning{
+	background-color: #f5f5f5;
+}
+.addCook p{
+	cursor: pointer;
+}
+#acookID{
+	float: none;
+}
+#acookType{
+	border:1px solid #999;
+	border-radius: 3px;
+	height: 25px;
+	width: 165px;
+}
+.success{
+	background-color: #dff0d8;
+}
+.danger{
+	background-color: #d9edf7;
+}
+.info{
+	background-color: #fcf8e3;
+}
+.active{
+	background-color: #f2dede;
+}
+#HBox h1,#addCookInfor h1,#addDishInfor h1,#addWaiterInfor h1,
+#addTableInfor h1{
+	width: 100%;
+	margin-top: 45px;
+	font-size: 22px;
+	font-weight: 600;
+	text-align: center;
+}
+.addCook{
+	height: 40px;
+}
+.addCook p{
+	float: right;
+}
+/*table.php*/
+#changeTable,#deleteTable{
+	cursor: pointer;
+}
+.addTable{
+	height: 90px;
+}
+.changeTable,.waiterlist{
+	margin-top: 30px;
+	width: 88% !important;
+	margin-left:12% !important;
+}
+.addTable p{
+	float: right;
+	cursor: pointer;
+}
+.addTable p:hover{
+	color:#f6ac49;
+}
+#location{
+	width: 165px ;
+	border:1px solid #999;
+	border-radius: 3px;
+	height: 24px;
+}
+#alocation,#aroomID{
+	border:1px solid #999;
+	width: 165px;
+    height: 25px;
+    border-radius: 3px;
+}
+
+
+/*========table.php============*/
+
+
+/*点击修改弹出*/
+#HBox,#addCookInfor,#addDishInfor,#addWaiterInfor,#addTableInfor{
+	z-index: 2;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	border-radius: 5px;
+	width: 320px;
+	height: 400px;
+	margin-left: -150px;
+	margin-top: -200px;
+	background: #fff;
+	display: none;
+
+}
+#dishesImage,#adishImg{
+	width: 72px !important;
+}
+.changeImg img,.addpic img{
+	width: 70px;
+	height: 54px;
+
+}
+.changeImg,.addpic{
+	border:1px solid #999;
+	padding: 8px;
+	margin-left: 10px;
+	float: left;
+}
+.menuPic{
+	margin-top: 35px;
+}
+.bg{
+	z-index: 1;
+	width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    background-color: #000;
+    opacity: 0.5;
+    top: 0;
+}
+.close1{
+	width: 20px;
+	height: 20px;
+	float: right;
+	cursor: pointer;
+	background: url(../images/3.gif);
+	background-size: 100%;
+	margin: 5px 5px 0 0;
+}
+.waiter{
+	padding: 0 0 0 8% !important;
+}
+.tablelist li label{
+	width: 70px;
+	display: block;
+	float: left;
+}
+.waiterlist li label{
+	width: 100px !important;
+}
+.tablelist li{
+	width: 100%;
+	height: 35px;
+}
+#cookType,#atype{
+	height: 26px;
+	width: 165px !important;
+}
+.textare{
+	height: 60px !important;
+}
+.tablelist li textarea{
+	border:1px solid #999;
+	width: 177px;
+	border-radius: 3px;
+	height: 56px;
+}
+.tablelist li input,#cookType,#atype{
+	float: left;
+	width: 160px;
+	padding-left: 5px;
+	line-height: 20px;
+	border:1px solid #999;
+	border-radius: 3px;
+}
+.tablelist li button{
+	width: 120px;
+	margin: 20px 0 0 60px;
+	height: 30px;
+	color: #f6ac49;
+	line-height: 30px;
+	border:1px solid #f6ac49;
+	background: transparent;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.tablelist li button:hover{
+	color: #fff;
+	background: #f6ac49;
+}
+#HBox form,#addCookInfor form,#addDishInfor form,#addWaiterInfor form,
+#addTableInfor form
+{
+	margin-top: 30px;
+	width: 90%;
+	padding: 0 10%;
+}
+
+
+/*discount.php*/
+/*修改*/
+.ontrue{
+	display: none;
+}
+.renew{
+	display: none;
+	border:1px solid #000;
+	width: 45px;
+	line-height: 23px;
+	padding-left: 5px;
+}
+
+.discountcont h2{
+	padding: 20px 0 20px 20px;
+	font-weight: normal;
+}
+.empty{
+	padding-top:30px; 
+	height: 300px;
+	width: 100%;
+	margin-bottom: 30px;
+	background: #fff;
+	box-shadow: 5px 5px 10px #999;
+}
+.empty h1{
+	text-align: center;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+.empty div{
+	width: 385px;
+	margin: 0 auto;
+}
+#discountNoteD{
+	margin-top: 20px;
+}
+#discountNote{
+	padding-left: 70px;
+}
+#discountNote p{
+	line-height: 30px;
+	float: left;
+	margin-right: 10px;
+	cursor: pointer;
+}
+.empty div input{
+	border:1px solid #333;
+	height: 20px;
+	width: 200px;
+	border-radius: 10px;
+	line-height: 20px;
+	padding: 5px;
+	margin: 0 auto;
+}
+.dispaerD img{
+	height: 200px;
+	width: 266px;
+	float: left;
+	margin-left: 40px;
+}
+.onreturn {display: none;}
+.appearCont div{
+	float: left;
+	padding-left: 25px;
+}
+.appearCont div p span{
+	margin-right: 10px;
+}
+.dispearBox{
+	width: 630px !important;
+	margin-left:-315px !important;
+}
+.appearCont div h1{
+	text-align: left !important;
+	margin-top: 0px !important;
+}
+#nowPrice{
+	border:1px solid #999;
+	width: 40px;
+    padding-left: 3px; 
+}
+.appearCont{
+	margin-top: 30px;
+}
+.add{
+	margin-top: 72px;
+	background-color: #f6ac49;
+    color: #fff;
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    line-height: 35px;
+}
+.discountMenu h1{
+	text-align: center;
+	font-weight: normal;
+	margin: 20px 0;
+}
+
+
+/*waiter.php*/
+.addWaiter{
+	height: 85px;
+}
+.waiterlist li input{
+	width: 133px !important;
+}
+.addWaiter p{
+	float: right;
+	cursor: pointer;
+}
+#addWaiterInfor form ul li label{
+	width: 85px !important;
+}
+#awaiterID,#atableID{
+	float: none;
+}
+
+
+/*leftManage.php*/
+.reback{
+	display: none;
+	cursor: pointer;
+}
+.delList{
+	cursor: pointer;
+	display: inline-block;
+}
+.delList,.reback{
+	color: #999;
+	margin-bottom: 5px;
+}
+.backLeft form{
+	padding: 0 15px;
+}
+.leftList li {
+	width: 100%;
+	padding: 10px 0;
+	box-shadow: 1px 1px 5px #999;
+	margin-bottom: 20px;
+}
+.leftList li img{
+	height: 60px;
+	width: auto;
+	float: left;
+}
+.leftContent{
+	float: left;
+	width: 90%;
+}
+.tel{
+	color: #999;
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.leftdate{
+	float: right;
+}
+.leftlist li.hover{background:#f5f5f5;}
+/*.backLeft{
+	position: absolute;
+	top: 0;
+}
+*/
+.backLeft{
+	display: none;
+}
+.backLeft textarea{
+	border:1px solid #333;
+	float: left;
+	width: 80%;
+	border-radius: 3px;
+}
+.backLeft button{
+	margin-left: 10px;
+	height: 34px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    width: 70px;
+    color: #fff;
+    float: right;
+    background: #2c3e50;
+    cursor: pointer;
+}
+
+.backLeft button:hover{
+	opacity: 0.8;
+}
+
+/*order.php*/
+.orderCont{
+	padding: 3em 5em;
+}
+.checkReturn{
+	display: none;
+}
+.borderHead{
+	width: 100%;
+    height: 40px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: rgba(0,0,0,0.8);
+}
+.tableID{
+	float: left;
+	margin-left: 150px;
+}
+.orderID{
+	float: left;
+	margin-left: 10px;
+}
+.allpay{
+	float: right;
+	margin-right: 10px;
+}
+.borderHead p{
+	color: #fff;
+	line-height: 40px;
+}
+.ordertable{
+	border:1px solid #000;
+	margin-bottom: 40px;
+}
+#date1,#date2{
+	margin-left: 10px;
+	border:1px solid #333;
+	float: left;
+}
+#button1{
+	margin-left: 10px;
+	text-align: center;
+	border: 1px solid #333;
+	width: 100px;
+	height: 20px;
+	display: block;
+	float: left;
+}
+.shouyiCont{
+	margin-top: 45px;
+}
+.lirun{
+	width: 600px !important;
+	margin-left: -300px !important;
+	height: 500px !important;
+	margin-top: -250px !important;
+}
+.shouyiCont h1{
+	text-align: center;
+	font-weight: normal;
+}
+.shouyiCont p{
+	line-height: 40px;
+	margin-left: 32px;
+}
+.checkCont{
+	display: none;
+}
+
